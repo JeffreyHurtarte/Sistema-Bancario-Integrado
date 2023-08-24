@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SBI - Estadísticas</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="../assets/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="../assets/css/Navbar-Centered-Brand-icons.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="../principal.html">
+                    <div class="sidebar-brand-icon"><img class="img-fluid" src="../assets/img/Logotipo%20B.png" width="100vw" height="auto" style="margin-top: 25px;"></div>
+                    <div class="sidebar-brand-text mx-3"></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar" style="margin-top: 40px;margin-bottom: 30px;">
+                    <li class="nav-item"><a class="nav-link" href="estadisticas.html"><img style="border-radius:3px; opacity: 0.8; margin: 5px;" src="../assets/img/icons/Industrial.png" width="20" height="20" /><span>Industrial</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="estadisticas-banrural.html"><img style="border-radius:3px; opacity: 0.8; margin: 5px;" src="../assets/img/icons/Banrural.png" width="20" height="20" /><span>Banrural</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="estadisticas-agromercantil.html"><img style="border-radius:3px; opacity: 0.8; margin: 5px;" src="../assets/img/icons/Agromercantil.png" width="20" height="20" /><span>Agromercantil</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-expand-lg shadow mb-4 topbar static-top navbar-light" style="background: #ffffff;color: var(--bs-body-bg);border-style: none;border-color: #121061;border-top-color: #121061;z-index: 100;">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars" style="color: var(--bs-primary);"></i></button><button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navcol-1" aria-expanded="false" aria-label="Toggle navigation" style="border-style: none;margin-right: 0px;"><i class="fa fa-chevron-down" style="color: var(--bs-primary);"></i></button>
+                        <div class="collapse navbar-collapse" id="navcol-1" style="--bs-body-bg: var(--bs-navbar-color);margin-right: 39px;">
+                            <ul class="navbar-nav mx-auto text-uppercase" style="--bs-body-bg: var(--bs-navbar-color);background: #ffffff;">
+                                <li class="nav-item"><a class="nav-link" href="../principal.html" style="color: #121061;background: #ffffff;font-weight: bold;">Cuentas</a></li>
+                                <li class="nav-item" style="font-weight: bold;"><a class="nav-link" href="../Transacciones/transacciones-industrial.html" style="color: #121061;background: #ffffff;font-weight: bold;">Transacciones</a></li>
+                                <li class="nav-item" style="font-weight: bold;"><a class="nav-link" href="estadisticas.html" style="color: #121061;font-weight: bold;">Estadísticas</a></li>
+                                <li class="nav-item" style="font-weight: bold;"><a class="nav-link" href="../Conciliación/conciliacion-industrial.html" style="color: #121061;font-weight: bold;border-color: var(--bs-focus-ring-color);">Conciliaciones</a></li>
+                                <li class="nav-item" style="font-weight: bold;"><a class="nav-link" href="../Reportería/reporteria-industrial.html" style="color: #121061;background: #ffffff;font-weight: bold;border-color: #110f60;">Reportes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                        <h3 class="text-dark mb-0"></h3><a class="btn btn-outline-primary d-none d-sm-inline-block" role="button" id="informe-banrural" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Descargar Informe<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="sweetalert2.all.min.js"></script>
+<script>
+    document.getElementById("informe-banrural").onclick = function() {
+    Swal.fire({
+        position: 'middle',
+        icon: 'success',
+        title: 'Informe Descargado Exitosamente',
+        showConfirmButton: false,
+        timer: 1500
+            });
+    }
+</script></a><a class="btn btn-outline-primary d-none d-sm-inline-block" role="button" href="../Reportería/reporteria-banrural.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" class="fa-sm text-white-50">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2C4.89543 2 4 2.89543 4 4V16C4 17.1046 4.89543 18 6 18H14C15.1046 18 16 17.1046 16 16V7.41421C16 6.88378 15.7893 6.37507 15.4142 6L12 2.58579C11.6249 2.21071 11.1162 2 10.5858 2H6ZM8 12C8 11.4477 7.55228 11 7 11C6.44772 11 6 11.4477 6 12V15C6 15.5523 6.44772 16 7 16C7.55228 16 8 15.5523 8 15V12ZM10 9C10.5523 9 11 9.44772 11 10V15C11 15.5523 10.5523 16 10 16C9.44772 16 9 15.5523 9 15V10C9 9.44772 9.44772 9 10 9ZM14 8C14 7.44772 13.5523 7 13 7C12.4477 7 12 7.44772 12 8V15C12 15.5523 12.4477 16 13 16C13.5523 16 14 15.5523 14 15V8Z" fill="currentColor"></path>
+                            </svg>&nbsp;Generación de Reportes</a>
+                    </div>
+                    <div class="row" style="margin-bottom: 4%;">
+                        <div class="col-lg-5 d-flex align-items-center justify-content-center">
+                            <p class="fw-bold" style="margin-bottom: 0px;padding-bottom: 0px;">Rango de Fechas</p>
+                        </div>
+                        <div class="col">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Fecha Inicial"><button class="btn btn-primary py-0" type="button"><i class="fas fa-calendar-plus" style="font-size: 16px;"></i></button></div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Fecha Final"><button class="btn btn-primary py-0" type="button"><i class="fas fa-calendar-minus"></i></button></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-success py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-success fw-bold text-xs mb-1"><span class="text-primary" style="color: blue;">saldo actual de la cuenta</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span>Q.600,000.00</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-primary" style="color:blue;"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span class="text-danger" style="color: red;">Monto DE egresos</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span>Q.230,000.00</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-arrow-down fa-2x text-danger" style="color: red;"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span class="text-success" style="color: green;">monto de ingresos</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span>Q.400,000.00</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-arrow-up fa-2x text-success" style="color:green;"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-start-primary py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col me-2">
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span style="color: gray;">monto EN RESERVA</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span>Q.30,000.00</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-arrows-alt-h fa-2x" style="color:gray;"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-7 col-xl-8">
+                            <div class="card shadow mb-4">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h6 class="text-primary fw-bold m-0">Flujo de Egresos</h6>
+                                    <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                                        <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
+                                            <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
+                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;0&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}]}}}"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-xl-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h6 class="text-primary fw-bold m-0">Distribución de las Transacciones</h6>
+                                    <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                                        <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
+                                            <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
+                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Direct&quot;,&quot;Social&quot;,&quot;Referral&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}}}"></canvas></div>
+                                    <div class="text-center small mt-4"><span class="me-2"><i class="fas fa-circle text-primary"></i>&nbsp;Ingresos</span><span class="me-2"><i class="fas fa-circle text-success"></i>&nbsp;Egresos</span><span class="me-2"><i class="fas fa-circle text-info"></i>&nbsp;Transferencias</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="text-primary fw-bold m-0">Distribución de los Gastos</h6>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="small fw-bold">Impuestos<span class="float-end">20%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="visually-hidden">20%</span></div>
+                                    </div>
+                                    <h4 class="small fw-bold">Préstamos<span class="float-end">40%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="visually-hidden">40%</span></div>
+                                    </div>
+                                    <h4 class="small fw-bold">Servicios<span class="float-end">60%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="visually-hidden">60%</span></div>
+                                    </div>
+                                    <h4 class="small fw-bold">Otros Gastos<span class="float-end">80%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="visually-hidden">80%</span></div>
+                                    </div>
+                                    <h4 class="small fw-bold">Total<span class="float-end">100%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="visually-hidden">100%</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="text-primary fw-bold m-0">Pagos Pendientes</h6>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col me-2">
+                                                <h6 class="mb-0"><strong>Pago de ISR</strong></h6><span class="text-xs">25/08/2023</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col me-2">
+                                                <h6 class="mb-0"><strong>Pago de Energía Eléctrica</strong></h6><span class="text-xs">27/08/2023</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col me-2">
+                                                <h6 class="mb-0"><strong>Pago de Préstamo a Banco Industrial</strong></h6><span class="text-xs">30/08/2023</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright d-flex align-items-center justify-content-center" style="padding-bottom: 0px;"><img src="../assets/img/Imagotipo.png" height="30"></div>
+                    <div>
+                        <p class="d-flex align-items-center justify-content-center" style="margin-top: 1%; margin-bottom: 1%; text-decoration: underline;">Ir al portal de Aplicaciones Empresariales</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" style="margin-top: 1%;margin-bottom: 1%;"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="margin-right: 2%;">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                        </svg>
+                        <p style="margin-right: 7%;margin-bottom: 0px;">Calle 7 0-34, Villa Nueva&nbsp;</p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="margin-right: 2%;">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path>
+                        </svg>
+                        <p style="margin-right: 7%;margin-bottom: 0px;">52658564</p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="margin-right: 2%;">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+                        </svg>
+                        <p style="margin-bottom: 0px;">support@sbi.com.gt</p>
+                    </div>
+                    <div class="text-center my-auto copyright d-flex align-items-center justify-content-center"><span>Copyright © Sistema Bancario Integrado 2023</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/chart.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/theme.js"></script>
+</body>
+
+</html>

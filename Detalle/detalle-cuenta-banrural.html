@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sistema Bancario Integrado</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="../assets/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="../assets/css/Navbar-Centered-Brand-icons.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="../principal.html">
+                    <div class="sidebar-brand-icon"><img class="img-fluid" src="../assets/img/Logotipo%20B.png" width="100vw" height="auto" style="margin-top: 25px;"></div>
+                    <div class="sidebar-brand-text mx-3"></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar" style="margin-top: 40px;margin-bottom: 30px;">
+                    <li class="nav-item"><a class="nav-link" href="../principal.html"><img style="border-radius:3px; opacity: 0.8; margin: 5px;" src="../assets/img/icons/Industrial.png" width="20" height="20" /><span>Industrial</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../principal-banrural.html"><img style="border-radius:3px; opacity: 0.8; margin: 5px;" src="../assets/img/icons/Banrural.png" width="20" height="20" /><span>Banrural</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../principal-agromercantil.html"><img style="border-radius:3px; opacity: 0.8; margin: 5px;" src="../assets/img/icons/Agromercantil.png" width="20" height="20" /><span>Agromercantil</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-expand-lg shadow mb-4 topbar static-top navbar-light" style="background: #ffffff;color: var(--bs-body-bg);border-style: none;border-color: #121061;border-top-color: #121061;z-index: 100;">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars" style="color: var(--bs-primary);"></i></button><button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navcol-1" aria-expanded="false" aria-label="Toggle navigation" style="border-style: none;margin-right: 0px;"><i class="fa fa-chevron-down" style="color: var(--bs-primary);"></i></button>
+                        <div class="collapse navbar-collapse" id="navcol-1" style="--bs-body-bg: var(--bs-navbar-color);margin-right: 39px;">
+                            <ul class="navbar-nav mx-auto text-uppercase" style="--bs-body-bg: var(--bs-navbar-color);background: #ffffff;">
+                                <li class="nav-item"><a class="nav-link" href="../principal.html" style="color: #121061;background: #ffffff;font-weight: bold;">Cuentas</a></li>
+                                <li class="nav-item" style="font-weight: bold;"><a class="nav-link" href="../Transacciones/transacciones-industrial.html" style="color: #121061;background: #ffffff;font-weight: bold;">Transacciones</a></li>
+                                <li class="nav-item" style="font-weight: bold;"><a class="nav-link" href="../Estadísticas/estadisticas.html" style="color: #121061;font-weight: bold;">Estadísticas</a></li>
+                                <li class="nav-item" style="font-weight: bold;"><a class="nav-link" href="../Conciliación/conciliacion-industrial.html" style="color: #121061;font-weight: bold;border-color: var(--bs-focus-ring-color);">Conciliaciones</a></li>
+                                <li class="nav-item" style="font-weight: bold;"><a class="nav-link" href="../Reportería/reporteria-industrial.html" style="color: #121061;background: #ffffff;font-weight: bold;border-color: #110f60;">Reportes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-4">Detalle de Cuenta</h3>
+                    <div class="card shadow">
+                        <div class="card-header py-3">
+                            <div class="card shadow border-start-success py-2">
+                                <div class="card shadow mb-4">
+                                    <div class="card-header py-3" style="padding-top: 0px;margin-top: -9px; background-color: #3e5cb2; display:flex; align-items:center; justify-content:center;">
+                                        <div style="margin-left: 0px;margin-right: 0px;padding-right: 50%;">
+                                            <h6 class="text-primary m-0 fw-bold text-white">Cuenta NO.122453</h6>
+                                            <h6 class="text-primary m-0 fw-bold text-white">Banco de Desarrollo Rural, S.A.</h6>
+                                        </div><a class="btn btn-primary btn-circle ms-1" role="button" style="background-color:white;"><img width="26" height="24" src="../assets/img/icons/Banrural.png"></a>
+                                    </div>
+                                    <div class="card-body d-lg-flex d-sm-block align-items-center justify-content-center" style="margin-bottom: 1px;">
+                                        <div class="mx-lg-5">
+                                            <p class="m-0 me-md-0 pe-md-0" style="margin-right: -123px;padding-right: 0px;">Cuenta Monetaria en Quetzales</p>
+                                            <p class="m-0 me-md-0 pe-md-0" style="margin-right: -123px;padding-right: 0px;">Uso de la Cuenta: Pagos Varios</p>
+                                            <p class="m-0 me-md-0 pe-md-0 mb-2" style="margin-right: -123px;padding-right: 0px;">Cuenta a nombre de: Elmer Alessandro Juárez Hernández</p>
+                                        </div>
+                                        <div class="d-sm-flex align-items-center justify-content-center"><a class="btn btn-warning btn-icon-split" role="button" style="margin-right: 20px;" href="../Modificación/modificacion-banrural.html"><span class="text-white-50 icon"><i class="fas fa-pencil-alt"></i></span><span class="text-white text">Actualizar</span></a><a class="btn btn-danger btn-icon-split" role="button" id="eliminar-cuenta-banrural" style="margin-left: 20px;"><span class="text-white-50 icon"><i class="fas fa-trash"></i></span><span class="text-white text">Eliminar</span><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="sweetalert2.all.min.js"></script>
+<script>
+    document.getElementById("eliminar-cuenta-banrural").onclick = function() {
+    Swal.fire({
+        position: 'middle',
+        icon: 'warning',
+        title: 'No fue posible Eliminar la Cuenta',
+        showConfirmButton: true
+            });
+    }
+</script></a></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col-md-10 me-2">
+                                            <div class="text-uppercase text-success fw-bold text-xs mb-1"><span>Saldo en la CUenta</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span>Q 215,000.00</span></div>
+                                        </div>
+                                        <div class="col-auto"><i class="fas fa-money-check fa-2x text-gray-300"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4 text-nowrap" style="margin-top: 6px;">
+                                    <div id="dataTable_length" class="dataTables_length d-flex align-items-center justify-content-center" aria-controls="dataTable" style="margin-top: 0px;"><label class="form-label">Show&nbsp;<select class="d-inline-block form-select form-select-sm">
+                                                <option value="10" selected="">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select>&nbsp;</label></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-md-end dataTables_filter d-flex align-items-center justify-content-center" id="dataTable_filter"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Fecha Inicial" style="padding-bottom: 0px;margin-bottom: 0px;padding-top: 0px;margin-top: 5px;"></label></div>
+                                </div>
+                                <div class="col-md-3" style="margin-top: 5px;">
+                                    <div class="text-md-end dataTables_filter" id="dataTable_filter-1"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Fecha Final" style="padding-top: 0px;margin-bottom: -4px;"></label></div>
+                                </div>
+                                <div class="col-lg-2 text-center"><button class="btn btn-outline-primary" type="button">Buscar</button></div>
+                            </div>
+                            <div class="table-responsive table mt-2" id="dataTable-1" role="grid" aria-describedby="dataTable_info">
+                                <table class="table my-0" id="dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Fecha</th>
+                                            <th>Documento</th>
+                                            <th>Descripción</th>
+                                            <th>Débito</th>
+                                            <th>Crédito</th>
+                                            <th>Saldo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>20/08/2023</td>
+                                            <td>522665</td>
+                                            <td>Pago de ISR Trimestral</td>
+                                            <td class="d-flex align-items-center justify-content-center" style="color:red;"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 16px;">
+                                                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                                    <path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path>
+                                                </svg>
+                                                <p>Q15,000.00</p>
+                                            </td>
+                                            <td></td>
+                                            <td>Q.215,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16/08/2023</td>
+                                            <td>565855</td>
+                                            <td>Transferencia desde CTA 456445</td>
+                                            <td></td>
+                                            <td class="d-flex align-items-center justify-content-center" style="color:green;"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
+                                                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                                    <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path>
+                                                </svg>
+                                                <p>Q10,000.00</p>
+                                            </td>
+                                            <td>Q.230,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14/08/2023</td>
+                                            <td>458565</td>
+                                            <td>Pago de Servicio Telefónico</td>
+                                            <td class="d-flex align-items-center justify-content-center" style="color:red;"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="font-size: 17px;">
+                                                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                                    <path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path>
+                                                </svg>
+                                                <p>Q5,000.00</p>
+                                            </td>
+                                            <td></td>
+                                            <td>Q.220,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10/08/2023</td>
+                                            <td>822655</td>
+                                            <td>Pago de Préstamos</td>
+                                            <td class="d-flex align-items-center justify-content-center" style="color:red;"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
+                                                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                                    <path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path>
+                                                </svg>
+                                                <p>Q.10,000.00</p>
+                                            </td>
+                                            <td></td>
+                                            <td>Q.225,000.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>07/08/2023</td>
+                                            <td>866555</td>
+                                            <td>Depósito Bancario, boleta NO.866555</td>
+                                            <td></td>
+                                            <td class="d-flex align-items-center justify-content-center" style="color:green;"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
+                                                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                                    <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path>
+                                                </svg>
+                                                <p>Q.235,000.00</p>
+                                            </td>
+                                            <td>Q.235,000.00</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td><strong></strong></td>
+                                            <td><strong></strong></td>
+                                            <td><strong></strong></td>
+                                            <td>Q.30,000.00<strong></strong></td>
+                                            <td>Q.245,000.00<strong></strong></td>
+                                            <td><strong>Q.215,000.00</strong></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 align-self-center">
+                                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Mostrando 1 a 10 de 10</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright d-flex align-items-center justify-content-center" style="padding-bottom: 0px;"><img src="../assets/img/Imagotipo.png" height="30"></div>
+                    <div>
+                        <p class="d-flex align-items-center justify-content-center" style="margin-top: 1%; margin-bottom: 1%; text-decoration: underline;">Ir al portal de Aplicaciones Empresariales</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" style="margin-top: 1%;margin-bottom: 1%;"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="margin-right: 2%;">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                        </svg>
+                        <p style="margin-right: 7%;margin-bottom: 0px;">Calle 7 0-34, Villa Nueva&nbsp;</p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="margin-right: 2%;">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path>
+                        </svg>
+                        <p style="margin-right: 7%;margin-bottom: 0px;">52658564</p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" style="margin-right: 2%;">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+                        </svg>
+                        <p style="margin-bottom: 0px;">support@sbi.com.gt</p>
+                    </div>
+                    <div class="text-center my-auto copyright d-flex align-items-center justify-content-center"><span>Copyright © Sistema Bancario Integrado 2023</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/theme.js"></script>
+</body>
+
+</html>
